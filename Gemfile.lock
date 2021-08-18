@@ -147,9 +147,8 @@ GEM
       jekyll (>= 3.8, < 5.0)
     jekyll-sitemap (1.4.0)
       jekyll (>= 3.7, < 5.0)
-    jekyll-theme-cayman (0.2.0)
-      jekyll (> 3.5, < 5.0)
-      jekyll-seo-tag (~> 2.0)
+    jekyll-theme-clean-blog (4.0.12)
+      jekyll (>= 3.8.5)
     jekyll-titles-from-headings (0.5.3)
       jekyll (>= 3.3, < 5.0)
     jekyll-watch (2.2.1)
@@ -213,7 +212,7 @@ GEM
       tzinfo (>= 1.0.0)
     unf (0.1.4)
       unf_ext
-    unf_ext (0.0.7.7)
+    unf_ext (0.0.7.7-x64-mingw32)
     unicode-display_width (1.7.0)
     wdm (0.1.1)
     zeitwerk (2.4.2)
@@ -224,10 +223,10 @@ PLATFORMS
 DEPENDENCIES
   github-pages (~> 217)
   jekyll-feed (~> 0.12)
-  jekyll-theme-cayman
+  jekyll-theme-clean-blog
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
 
 BUNDLED WITH
-   2.2.25
+   2.1.4
