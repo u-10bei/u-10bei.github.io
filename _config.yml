@@ -30,9 +30,11 @@ url: "https://u-10bei.github.io" # the base hostname & protocol for your site, e
 github_username:  u-10bei
 
 # Build settings
-theme: jekyll-theme-clean-blog
+remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
 plugins:
   - jekyll-feed
+  - jekyll-remote-theme
+  - github-pages
 
 # Exclude from processing.
 # The following items will not be processed, by default.
