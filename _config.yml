@@ -21,8 +21,8 @@
 title: u-10bei's labo
 email: u10bei.github.io@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  u-10bei wants to be a data scientist with MBA holders<br>
-  うっかりじゅうべえはＭＢＡホルダーのデータサイエンティストになりたい
+  wants to be a data scientist with MBA holders.<br>
+  ＭＢＡホルダーのデータサイエンティストになりたい
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://u-10bei.github.io" # the base hostname & protocol for your site, e.g. http://example.com
 # twitter_username: jekyllrb
