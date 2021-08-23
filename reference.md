@@ -7,6 +7,8 @@ description:  >-
 background: '/img/bg-contact.jpg'
 ---
 
-Reference site<br>（参考サイト）|Adress<br>（アドレス）|memo<br>（備考）|
-|---|---|---|
-|プログラミングでアートを夢見る.|[jekyll blog](https://dev-yakuza.posstree.com/jekyll/)|jekyll|
+## Reference site<br>（参考サイト）
+1. プログラミングでアートを夢見る.
+   - [jekyll blog](https://dev-yakuza.posstree.com/jekyll/)
+     - [フォルダ構造](https://dev-yakuza.posstree.com/jekyll/directory_structure/)
+     - [googleサービス](https://dev-yakuza.posstree.com/jekyll/google-service/)
