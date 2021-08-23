@@ -31,11 +31,7 @@ github_username: u-10bei
 
 # Build settings
 markdown: GFM
-<<<<<<< HEAD
 remote theme: StartBootstrap/startbootstrap-clean-blog-jekyll
-=======
-remote_theme: StartBootstrap/startbootstrap-clean-blog-jekyll
->>>>>>> parent of d8ede5e (fix reference)
 plugins:
   - jekyll-feed
   - jekyll-remote-theme
@@ -49,12 +45,12 @@ plugins:
 # Excluded items can be processed by explicitly listing the directories or
 # their entries' file path in the `include:` list.
 #
-# exclude:
+exclude:
+  - Gemfile
+  - Gemfile.lock
 #   - .sass-cache/
 #   - .jekyll-cache/
 #   - gemfiles/
-#   - Gemfile
-#   - Gemfile.lock
 #   - node_modules/
 #   - vendor/bundle/
 #   - vendor/cache/
