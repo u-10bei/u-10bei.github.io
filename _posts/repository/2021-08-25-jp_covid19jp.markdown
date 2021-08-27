@@ -4,6 +4,7 @@ title:  "covid-19_JPdataについて"
 subtitle:   "リポジトリ「covid-19_JPdata」の紹介"
 date:   2021-08-25 12:00:00 +0900
 categories: repository
+background: '/img/posts/04.jpg'
 ---
 
 ## リポジトリ「covid-19_JPdata」の紹介

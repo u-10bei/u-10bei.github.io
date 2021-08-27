@@ -1,6 +1,9 @@
 ---
 layout: page
-title: Posts
+title: Blog category
+description:  >-
+  My interests and concerns.<br>
+  私の興味の中心
 background: '/img/bg-post.jpg'
 ---
 
