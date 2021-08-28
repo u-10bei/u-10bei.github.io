@@ -1,12 +1,10 @@
 ---
-layout: page
-title: repository
-background: '/img/posts/04.jpg'
+layout: home
+title: all post
+description: 投稿一覧
+background: '/img/bg-post.jpg'
 pagination:
   enabled: true
-  category: repository
-  permalink: '/:year/:month/:num/'
-
 ---
 
 {% for post in paginator.posts %}

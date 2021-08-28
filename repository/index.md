@@ -5,8 +5,6 @@ background: '/img/posts/04.jpg'
 pagination:
   enabled: true
   category: repository
-  permalink: '/:year/:month/:num/'
-
 ---
 
 {% for post in paginator.posts %}
