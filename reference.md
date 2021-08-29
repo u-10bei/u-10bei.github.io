@@ -8,7 +8,12 @@ background: '/img/bg-contact.jpg'
 ---
 
 ## Reference site<br>（参考サイト）
-1. プログラミングでアートを夢見る.
-   - [jekyll blog](https://dev-yakuza.posstree.com/jekyll/)
-     - [フォルダ構造](https://dev-yakuza.posstree.com/jekyll/directory_structure/)
-     - [googleサービス](https://dev-yakuza.posstree.com/jekyll/google-service/)
+- ### jekyll関係
+  - [プログラミングでアートを夢見る.](https://dev-yakuza.posstree.com/)
+      - [jekyll blog](https://dev-yakuza.posstree.com/jekyll/)
+        1. [フォルダ構造](https://dev-yakuza.posstree.com/jekyll/directory_structure/)
+        2. [googleサービス](https://dev-yakuza.posstree.com/jekyll/google-service/)
+- ### R言語関係
+  - [Heavy Watal](https://heavywatal.github.io/)
+    1. [readr — 高速で柔軟なテーブル読み込み](https://heavywatal.github.io/rstats/readr.html)
+    2. [dplyr — 高速data.frame処理](https://heavywatal.github.io/rstats/dplyr.html)
