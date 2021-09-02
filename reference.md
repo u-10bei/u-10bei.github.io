@@ -17,3 +17,9 @@ background: '/img/bg-contact.jpg'
   - [Heavy Watal](https://heavywatal.github.io/)
     1. [readr — 高速で柔軟なテーブル読み込み](https://heavywatal.github.io/rstats/readr.html)
     1. [dplyr — 高速data.frame処理](https://heavywatal.github.io/rstats/dplyr.html)
+- ### highchart.js関係
+  - [ギリギリジンジン](https://grgrjnjn.hatenablog.jp/)
+    - [Highcharts入門](https://grgrjnjn.hatenablog.jp/entry/2020/09/18/221052) 
+- ### csv読み込み(javascript)
+  - [WEB制作・開発者の記録](https://freelance321.com/)
+    - [【JavaScript】CSVデータの読み込み + 出力](https://freelance321.com/javascript/load-csv/) 
