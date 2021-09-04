@@ -6,6 +6,7 @@ chart: /assets/user/covid-19_JPchart.js
 ---
 
 # covid-19_JPchart
+Graphical display based on mhlw.go.jp data.
 <div id="container" style="width:100%; height:400px;"></div>
 
 ### Data source<br>（データ取得元）
