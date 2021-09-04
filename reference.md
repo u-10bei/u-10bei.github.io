@@ -23,3 +23,6 @@ background: '/img/bg-contact.jpg'
 - ### csv読み込み(javascript)
   - [WEB制作・開発者の記録](https://freelance321.com/)
     - [【JavaScript】CSVデータの読み込み + 出力](https://freelance321.com/javascript/load-csv/) 
+- ### サイト関係
+  - [qiita](https://qiita.com/)
+    - [TwitterやFacebookで表示されるOGPイメージをGithubPagesで簡単に実装する](https://qiita.com/o_ob/items/6c71bc783df428116ef8)
