@@ -1,8 +1,8 @@
 ---
 layout: post
-title:  "covid-19_JPdataについて"
-subtitle:   "リポジトリ「covid-19_JPdata」の紹介"
-date:   2021-08-25 12:00:00 +0900
+title:  "covid-19_JPchartについて"
+subtitle:   "リポジトリ「covid-19_JPchart」の紹介"
+date:   2021-09-04 12:00:00 +0900
 categories: repository
 background: '/img/posts/04.jpg'
 pagination: 
@@ -11,9 +11,9 @@ pagination:
   paginate_path: '/jekyll/:num/pagination-plugin/'
 ---
 
-## リポジトリ「covid-19_JPdata」の紹介
-- Ｒを使い、厚生労働省や北九州市のオープンデータを分析しやすい形に加工しています。
+## リポジトリ「covid-19_JPchart」の紹介
+- javascript、Highchartsを使い、厚生労働省オープンデータを折れ線グラフにしています。
 - 毎日２３時過ぎに、バッチファイルを使い、自動でデータを更新しています。
 ---
 - csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://u-10bei.github.io/covid-19_JPdata/)
-- プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPdata)
+- プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPchart)
