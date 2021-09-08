@@ -15,7 +15,7 @@ pagination:
 ## リポジトリ「covid-19_JPchart」の紹介２
 - こちらでは、国勢調査、ＮＨＫのデータを基に、
 - javascript、Highchartsを使い、過去１週間の人口１０万人あたりの陽性者数（都道府県別）を棒グラフにしています。
-- このページが開かれるたび、データを取得しています。
+- 毎朝５時にデータを更新しています。
 
 <div id="container" style="width:100%; height:1000px;"></div>
 
