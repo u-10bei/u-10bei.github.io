@@ -30,18 +30,18 @@ function import_csv(csv_path)
 document.addEventListener('DOMContentLoaded', function () {
     import_csv(INPUT_ADDRESS)
     .then(result => {
+        let arr7 = []
         let arr = []
         let cats = []
         for (let i = 1; i < result.length-1; i++) {
-            arr.push(Number(result[i][3]))
+            arr7.push(Number(result[i][4]))
+            arr.push(Number(result[i][5]))
             cats.push(result[i][0])
         }
-        // set data
-        let datas = [{name:"都道府県別データ",data:arr}]
         // creating a chart
         const chart = Highcharts.chart('container', {
             chart: {
-                type: 'bar'
+                displayErrors: true
             },
             title: {
                 text: '人口１０万人あたりの感染者数（過去７日間）'
@@ -76,7 +76,15 @@ document.addEventListener('DOMContentLoaded', function () {
             credits: {
                 enabled: false
             },
-            series: datas
+            series: [{
+                type: 'bar',
+                name: '過去７日間',
+                data: arr7
+            },{
+                type: 'line',
+                name: '最新',
+                data: arr
+            }]
         });
         return chart
     });
