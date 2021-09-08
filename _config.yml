@@ -38,6 +38,7 @@ plugins:
   - jekyll-remote-theme
   - github-pages
   - jekyll-paginate-v2
+  - jekyll-sitemap
 
 # Exclude from processing.
 # The following items will not be processed, by default.
