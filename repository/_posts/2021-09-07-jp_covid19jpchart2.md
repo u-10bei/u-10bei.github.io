@@ -17,7 +17,7 @@ pagination:
 - javascript、Highchartsを使い、過去１週間の人口１０万人あたりの陽性者数（都道府県別）を棒グラフにしています。
 - 毎朝５時にデータを更新しています。
 
-<div id="container" style="width:100%; height:1000px;"></div>
+<div id="container" style="width:100%; height:500px;"></div>
 
 ---
 - ### Data source<br>（データ取得元）

@@ -32,38 +32,85 @@ document.addEventListener('DOMContentLoaded', function () {
     .then(result => {
         let arr7 = []
         let arr = []
-        let cats = []
+        let dates = []
+        let pref7 = []
+        for (let i = 6; i < 13; i++) {
+            dates.push(result[0][i])
+        }
         for (let i = 1; i < result.length-1; i++) {
-            arr7.push(Number(result[i][4]))
-            arr.push(Number(result[i][5]))
-            cats.push(result[i][0])
+            let post7 = 0
+            let arr2 = []
+            for (let j = 6; j < 13; j++) {
+                post7 += Number(result[i][j])
+                arr2.push([result[0][j],Number(result[i][j])])
+            }
+            obj = {
+                name:result[i][0],
+                y:Number(result[i][4]),
+                exParam:post7,
+                drilldown:result[i][0]
+            }
+            arr7.push(obj)
+            obj = {
+                name:result[i][0],
+                y:Number(result[i][5]),
+                exParam:Number(result[i][12])
+            }
+            arr.push(obj)
+            obj = {
+                name:result[i][0],
+                id:result[i][0],
+                type:'bar',
+                xAxis:1,
+                data:arr2
+            }
+            pref7.push(obj)
         }
         // creating a chart
+        console.log(pref7)
         const chart = Highcharts.chart('container', {
             chart: {
-                displayErrors: true
+                accessibility: {
+                    enabled: true
+                },
+                alignTicks: true,
+                displayErrors: true,
             },
             title: {
                 text: '人口１０万人あたりの感染者数（過去７日間）'
             },
-            xAxis: {
-                categories: cats,
+            xAxis: [
+                {
+                    type: 'category',
+                    title: {
+                        text:null
+                    },
+                    showEmpty: false,
+                    min:0,
+                    max:9,
+                    scrollbar: {
+                        enabled: true
+                    }
+                },{
+                    type: 'category',
+                    title: {
+                        text:null
+                    },
+                    showEmpty: false,
+                    min:0,
+                    max:6,
+                    scrollbar: {
+                        enabled: false
+                    }
+                }
+            ],
+            yAxis: {
                 title: {
                     text: null
                 }
             },
-            yAxis: {
-                min: 0,
-                title: {
-                    text: '直近1週間の人口10万人あたりの感染者数',
-                    align: 'high'
-                },
-                labels: {
-                    overflow: 'justify'
-                }
-            },
             tooltip: {
-                pointFormat: "{point.y:,.2f}"
+                pointFormat: '{series.name}: <b>{point.y:,.2f}</b><br/>陽性者数: <b>{point.exParam}</b><br/>',
             },
             plotOptions: {
                 bar: {
@@ -78,13 +125,18 @@ document.addEventListener('DOMContentLoaded', function () {
             },
             series: [{
                 type: 'bar',
-                name: '過去７日間',
+                name: '過去7日間',
+                xAxis:0,
                 data: arr7
-            },{
+            },
+            {
                 type: 'line',
                 name: '最新',
                 data: arr
-            }]
+            }],
+            drilldown:{
+                series:pref7
+            },
         });
         return chart
     });
