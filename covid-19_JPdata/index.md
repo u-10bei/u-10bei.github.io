@@ -12,9 +12,9 @@ Data is updated daily after 11pm.<br>
 
 # covid-19_NHKdata
 Acquisition of open data from the NHK<br>
-Data is updated daily after 8am.<br>
+Data is updated daily after 5am.<br>
 厚生労働省、北九州市のオープンデータを取得します。<br>
-毎日８時過ぎにデータを更新します。
+毎日５時過ぎにデータを更新します。
 
 ## R script
 
@@ -23,13 +23,15 @@ Data is updated daily after 8am.<br>
 |**Name**|**Version**|**Library**|**memo**|
 |**（名前）**|**（バージョン）**|**（ライブラリ）**|**（備考）**|
 |CreateData.R|4.0.5|tidyverse|pipe %>%|
-|CreateData410.R|4.1.0|readr,dplyr|pipe \|>|
-|CreateNHK.R|4.1.0|readr,dplyr|pipe \|>|NHK
+|CreateData410.R|4.1.2|readr,dplyr|pipe \|>|
+|CreateNHK.R|4.1.2|readr,dplyr,tidyr|pipe \|>|NHK
 
 ## Data source<br>（データ取得元）
-**Ministry of Health, Labour and Welfare（厚生労働省）**<br>[https://www.mhlw.go.jp/stf/covid-19/open-data.html](https://www.mhlw.go.jp/stf/covid-19/open-data.html) <br>
-**Kitakyushu City（北九州市）**<br>[https://ckan.open-governmentdata.org/organization/kitakyushu-city](https://ckan.open-governmentdata.org/organization/kitakyushu-city)
-**NHK**<br>[https://www3.nhk.or.jp/news/special/coronavirus/data/](https://www3.nhk.or.jp/news/special/coronavirus/data/)
+**Ministry of Health, Labour and Welfare（厚生労働省）**<br>[https://covid19.mhlw.go.jp/extensions/public/index.html](https://covid19.mhlw.go.jp/extensions/public/index.html) <br>
+**Kitakyushu City（北九州市）**<br>[https://ckan.open-governmentdata.org/organization/kitakyushu-city](https://ckan.open-governmentdata.org/organization/kitakyushu-city)<br>
+**NHK**<br>[https://www3.nhk.or.jp/news/special/coronavirus/data/](https://www3.nhk.or.jp/news/special/coronavirus/data/)<br>
+**population（人口）**<br>[https://www.e-stat.go.jp/dbview?sid=0003445078](https://www.e-stat.go.jp/dbview?sid=0003445078)
+
 
 ## Output data<br>（出力データ）
 [**National data（全国データ）**：COVID-19_JP.csv](https://github.com/u-10bei/covid-19_JPdata/blob/main/data/COVID-19_JP.csv)<br>
