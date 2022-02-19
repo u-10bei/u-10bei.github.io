@@ -2,7 +2,7 @@
 layout: post
 title:  "covid-19_KTQ_patient_per100Kについて"
 subtitle:   "リポジトリ「covid-19_JPchart」の紹介３"
-date:   2022-02-23 00:00:00 +0900
+date:   2022-02-20 00:00:00 +0900
 categories: repository
 background: '/img/posts/04.jpg'
 chart: /assets/user/covid-19_KTQ_patient_per100K.js
