@@ -93,3 +93,10 @@
 <script src="https://code.highcharts.com/modules/accessibility.js"></script>
 <script src="{{ page.chart }}" type="text/javascript"></script>
 {% endif %}
+
+{% if page.map %}
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
+integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
+crossorigin=""></script>
+<script src="{{ page.map }}" type="text/javascript"></script>
+{% endif %}
