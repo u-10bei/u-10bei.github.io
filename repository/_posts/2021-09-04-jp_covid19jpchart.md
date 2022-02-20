@@ -20,5 +20,5 @@ pagination:
 <div id="container" style="width:100%; height:500px;"></div>
 
 ---
-- csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://u-10bei.github.io/covid-19_JPdata/)
+- csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPdata#readme)
 - プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPchart)

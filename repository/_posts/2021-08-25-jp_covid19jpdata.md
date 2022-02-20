@@ -15,5 +15,5 @@ pagination:
 - Ｒを使い、厚生労働省や北九州市のオープンデータを分析しやすい形に加工しています。
 - 毎日２３時過ぎに、バッチファイルを使い、自動でデータを更新しています。
 ---
-- csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://u-10bei.github.io/covid-19_JPdata/)
+- csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPdata#readme)
 - プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPdata)
