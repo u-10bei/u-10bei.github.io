@@ -15,9 +15,9 @@ pagination:
 <div>
   <h3>{{ category }}</h3>
   {% for post in site.categories[category] %}
-  <a href="{{ post.url | absolute_url }}">
+  <p><a href="{{ post.url | absolute_url }}">
     {{ post.title }}
-  </a>
+  </a></p>
   {% endfor %}
 </div>
 <br>
