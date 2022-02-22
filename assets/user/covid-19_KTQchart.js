@@ -1,4 +1,4 @@
-const INPUT_ADDRESS = 'https://raw.githubusercontent.com/u-10bei/covid-19_JPdata/main/data/COVID-19_KTQ.csv'
+const INPUT_ADDRESS = '/datas/COVID-19_KTQ.csv'
 const NET_ERROR = '正常にリクエストを処理できませんでした。'
 const CATCH_ERROR = 'エラーが発生しました。'
 
