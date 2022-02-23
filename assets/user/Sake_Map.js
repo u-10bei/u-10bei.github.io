@@ -1,9 +1,9 @@
 const INPUT_ADDRESS = '/datas/Sake_Map.geojson'
 
-const t_std = new L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
+const t_std = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/std/{z}/{x}/{y}.png', {
     attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>国土地理院</a>"
 });
-const t_pale = new L.tileLayer('http://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
+const t_pale = new L.tileLayer('https://cyberjapandata.gsi.go.jp/xyz/pale/{z}/{x}/{y}.png', {
     attribution: "<a href='https://maps.gsi.go.jp/development/ichiran.html' target='_blank'>国土地理院</a>"
 });
 const Map_b = {
@@ -16,15 +16,20 @@ const map = L.map('map', {
     layers: [t_std],
     minZoom: 4,
 });
-const sake = $.getJSON(INPUT_ADDRESS, function (data) {
+const markers = L.markerClusterGroup({
+    showCoverageOnHover: false,
+    spiderfyOnMaxZoom: true,
+    removeOutsideVisibleBounds: true,
+    disableClusteringAtZoom: 18
+});
+$.getJSON(INPUT_ADDRESS, function (data) {
     L.geoJson(data, {
         onEachFeature: function (feature, layer) {
             var Marker_P = feature.properties.Brewery + '「' + feature.properties.Brand + '」'
             layer.bindPopup(Marker_P);
-        }}).addTo(map);
+            markers.addLayer(layer)
+    }})
 });
-const Map_s = {
-    "Sake": sake,
-};
+map.addLayer(markers);
 L.control.scale({imperial: false}).addTo(map);
-L.control.layers(Map_b, Map_s, { collapsed: false }).addTo(map);
+L.control.layers(Map_b, { collapsed: false }).addTo(map);
