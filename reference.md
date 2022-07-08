@@ -28,3 +28,5 @@ background: '/img/bg-contact.jpg'
     - [TwitterやFacebookで表示されるOGPイメージをGithubPagesで簡単に実装する](https://qiita.com/o_ob/items/6c71bc783df428116ef8)
   - [Favicon Generator](https://realfavicongenerator.net/)
     - [Favicon checker](https://realfavicongenerator.net/favicon_checker#.YhGcwejP200)
+- ### 時系列分析関係
+  - [Logics of Blue](https://logics-of-blue.com/)
