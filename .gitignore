@@ -1,14 +1,6 @@
-<<<<<<< HEAD
 _site
 .sass-cache
 .jekyll-cache
 .jekyll-metadata
 vendor
-=======
-_site
-.sass-cache
-.jekyll-cache
-.jekyll-metadata
-vendor
->>>>>>> 28a2dece3ca8bb5a146a26825e874723d04d5d01
 *autoexec.py
