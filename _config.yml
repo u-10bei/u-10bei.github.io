@@ -29,6 +29,7 @@ url: "https://u-10bei.github.io" # the base hostname & protocol for your site, e
 # twitter_username: jekyllrb
 author: u-10bei
 github_username: u-10bei
+github: [metadata]
 
 # Build settings
 markdown: GFM
