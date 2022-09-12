@@ -13,7 +13,7 @@ pagination:
 ---
 
 ## リポジトリ「Pedigree_JPG1horses」の紹介
-- javascript、axios、vis.jsを使い、日本のＧ１（旧八大競走を含む）勝利馬の血統を、ネットワークグラフにしています。
+- mariaDB、PHP、axios、vis.js、javascriptを使い、日本のＧ１（旧八大競走を含む）勝利馬の血統を、ネットワークグラフにしています。
 
 ---
 
