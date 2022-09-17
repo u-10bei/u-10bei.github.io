@@ -42,7 +42,7 @@ window.addEventListener('load', () => {
             },
             layout: {
                 hierarchical: {
-                    enabled:false,
+                    enabled:true,
                     sortMethod: 'directed',  // hubsize, directed
                     shakeTowards: 'leaves'  // roots, leaves
                   }
