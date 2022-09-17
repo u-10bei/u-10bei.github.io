@@ -41,6 +41,7 @@ window.addEventListener('load', () => {
                 },
             },
             layout: {
+                improvedLayout: false,
                 hierarchical: true,
             }
         };
