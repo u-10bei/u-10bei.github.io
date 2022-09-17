@@ -41,8 +41,11 @@ window.addEventListener('load', () => {
                 },
             },
             layout: {
-                improvedLayout: false,
-                hierarchical: true,
+                hierarchical: {
+                    enabled:false,
+                    sortMethod: 'directed',  // hubsize, directed
+                    shakeTowards: 'leaves'  // roots, leaves
+                  }
             }
         };
         network = new vis.Network(container, data, options);
