@@ -41,6 +41,7 @@ window.addEventListener('load', () => {
                 },
             },
             layout: {
+                improvedLayout:false,
                 hierarchical: {
                     enabled:true,
                     sortMethod: 'directed',  // hubsize, directed
