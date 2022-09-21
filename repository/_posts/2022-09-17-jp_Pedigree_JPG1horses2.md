@@ -1,7 +1,7 @@
 ---
 layout: post
-title:  "Pedigree_JPG1horsesについて２"
-subtitle:   "リポジトリ「Pedigree_JPG1horses」の紹介２"
+title:  "Pedigree_JPG1horsesについて"
+subtitle:   "リポジトリ「Pedigree_JPG1horses」の紹介"
 date:   2022-09-08 00:00:00 +0900
 categories: repository
 background: '/img/posts/06.jpg'
@@ -13,9 +13,7 @@ pagination:
 ---
 
 ## リポジトリ「Pedigree_JPG1horses」の紹介
-- 前回、vis.jsでグラフを作成しましたが、  
-- データ数の増加とともに描画に時間がかかるようになったので、  
-今回は、mariaDB、PHP、D3.js、javascriptを使い、  
+- mariaDB、PHP、D3.js、javascriptを使い、  
 日本のＧ１（１９８３年までの旧八大競走、ジャパンカップを含む）  
 勝利馬の血統を、階層図にしています。
 
