@@ -21,7 +21,7 @@ pagination:
 
 ---
 
-<div id="mychart" style="width:100%; height:1000px;"></div>
----
+<div id="mychart" style="width:100%; height:100%;"></div>
 
+---
 - プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/Pedigree_JPG1horses)

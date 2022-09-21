@@ -20,5 +20,4 @@ pagination:
 <div id="network" style="width:100%; height:600px;"></div>
 
 ---
-
 - プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/Pedigree_JPG1horses)
