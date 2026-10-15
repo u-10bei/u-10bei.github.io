@@ -1,0 +1,17 @@
+{
+  "name": "u-10bei-labo",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "charts": "uv run python scripts/build_charts.py",
+    "dev": "astro dev",
+    "build": "npm run charts && astro build",
+    "preview": "astro preview"
+  },
+  "dependencies": {
+    "@astrojs/mdx": "^8.0.3",
+    "@astrojs/rss": "^4.0.19",
+    "@astrojs/sitemap": "^3.7.4",
+    "astro": "^7.3.8"
+  }
+}

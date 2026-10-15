@@ -1,0 +1,17 @@
+---
+import type { GetStaticPaths, Page } from 'astro';
+import PostList from '../../components/PostList.astro';
+import type { Post } from '../../lib/posts';
+import { SITE } from '../../site';
+import { getPosts } from '../../lib/posts';
+
+export const getStaticPaths = (async ({ paginate }) => {
+  // Page 1 is rendered by index.astro
+  return paginate(await getPosts(), { pageSize: SITE.postsPerPage }).slice(1);
+}) satisfies GetStaticPaths;
+
+interface Props { page: Page<Post> }
+const { page } = Astro.props;
+---
+
+<PostList page={page} />

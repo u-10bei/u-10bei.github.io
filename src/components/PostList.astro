@@ -1,0 +1,25 @@
+---
+import type { Page } from 'astro';
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostPreview from './PostPreview.astro';
+import type { Post } from '../lib/posts';
+
+interface Props { page: Page<Post> }
+const { page } = Astro.props;
+// Page 1 lives at /posts/ (index.astro), later pages at /posts/<n>.html
+const href = (n: number) => (n === 1 ? '/posts/' : `/posts/${n}.html`);
+---
+
+<BaseLayout
+  title={page.currentPage > 1 ? `all post - page ${page.currentPage}` : 'all post'}
+  heading="all post"
+  subheading="投稿一覧"
+  background="/img/bg-post.jpg"
+>
+  {page.data.map((post) => <PostPreview post={post} />)}
+
+  <nav class="pager">
+    {page.url.prev && <a class="btn" href={href(page.currentPage - 1)}>&larr; Newer Posts</a>}
+    {page.url.next && <a class="btn next" href={href(page.currentPage + 1)}>Older Posts &rarr;</a>}
+  </nav>
+</BaseLayout>

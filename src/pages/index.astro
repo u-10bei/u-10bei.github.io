@@ -1,0 +1,25 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import PostPreview from '../components/PostPreview.astro';
+import { SITE } from '../site';
+import { getPosts } from '../lib/posts';
+
+const posts = (await getPosts()).slice(0, 5);
+const repositories = ['covid-19_JPdata', 'covid-19_JPchart', 'Sake_Map', 'Population_Projections', 'Pedigree_JPG1horses'];
+---
+
+<BaseLayout subheading={SITE.description} background="/img/bg-index.jpg">
+  <p>I' m gonna enrich it little by little.<br />少しづつ充実させていきます。</p>
+
+  <h2>Repositories</h2>
+  <ul>
+    {repositories.map((name) => <li><a href={`https://github.com/${SITE.github}/${name}`}>{name}</a></li>)}
+  </ul>
+  <hr />
+
+  {posts.map((post) => <PostPreview post={post} />)}
+
+  <div class="pager">
+    <a class="btn next" href="/posts/">View All Posts &rarr;</a>
+  </div>
+</BaseLayout>
