@@ -1,0 +1,48 @@
+---
+import { render } from 'astro:content';
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { SITE } from '../../../site';
+import { formatDate, getPosts, postParams, postUrl, readingTime, type Post } from '../../../lib/posts';
+
+export async function getStaticPaths() {
+  const posts = await getPosts();
+  return posts.map((post, i) => ({
+    params: postParams(post),
+    // posts are newest first
+    props: { post, newer: posts[i - 1], older: posts[i + 1] },
+  }));
+}
+
+interface Props { post: Post; newer?: Post; older?: Post }
+const { post, newer, older } = Astro.props;
+const { Content } = await render(post);
+const { title, subtitle, date, background, license } = post.data;
+---
+
+<BaseLayout
+  title={title}
+  subheading={subtitle}
+  description={subtitle}
+  meta={`Posted by ${SITE.author} on ${formatDate(date)} · ${readingTime(post.body)}`}
+  background={background}
+  variant="post"
+>
+  <article>
+    <Content />
+  </article>
+
+  <hr />
+  <nav class="pager">
+    {older && <a class="btn" href={postUrl(older)} title={older.data.title}>&larr; Previous Post</a>}
+    {newer && <a class="btn next" href={postUrl(newer)} title={newer.data.title}>Next Post &rarr;</a>}
+  </nav>
+
+  {license === 'cc-by-3.0' && (
+    <p slot="footer" class="copyright">
+      <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">
+        <img alt="Creative Commons License" width="88" height="31" src="https://i.creativecommons.org/l/by/3.0/88x31.png" />
+      </a><br />
+      This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by/3.0/">Creative Commons Attribution 3.0 Unported License</a>.
+    </p>
+  )}
+</BaseLayout>

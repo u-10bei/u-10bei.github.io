@@ -1,0 +1,23 @@
+---
+title: "covid-19_JPchartについて"
+subtitle: "リポジトリ「covid-19_JPchart」の紹介"
+date: 2021-09-04T12:00:00+09:00
+category: repository
+license: cc-by-3.0
+background: '/img/posts/04.jpg'
+---
+
+import Chart from '../../components/Chart.astro';
+
+## リポジトリ「covid-19_JPchart」の紹介
+- 厚生労働省オープンデータを基に、全国の新規陽性者数を折れ線グラフにしています。
+- リポジトリでは javascript、Highcharts を使っていましたが、このページのグラフは Python（Plotly）で作り直しました。
+- データは２０２０年１月１６日から２０２２年１１月１３日までです（データの更新は終了しています）。
+
+---
+
+<Chart name="covid19_jp" />
+
+---
+- csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPdata#readme)
+- プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPchart)

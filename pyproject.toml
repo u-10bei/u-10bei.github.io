@@ -1,0 +1,13 @@
+[project]
+name = "u-10bei-labo-charts"
+version = "0.1.0"
+description = "Build-time chart generation for u-10bei's labo"
+requires-python = ">=3.12"
+dependencies = [
+    "folium>=0.19",
+    "pandas>=2.2",
+    "plotly>=6.0",
+]
+
+[tool.uv]
+package = false

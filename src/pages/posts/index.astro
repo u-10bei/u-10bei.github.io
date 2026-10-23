@@ -1,0 +1,20 @@
+---
+import PostList from '../../components/PostList.astro';
+import { SITE } from '../../site';
+import { getPosts } from '../../lib/posts';
+
+const posts = await getPosts();
+const lastPage = Math.max(1, Math.ceil(posts.length / SITE.postsPerPage));
+const page = {
+  data: posts.slice(0, SITE.postsPerPage),
+  start: 0,
+  end: Math.min(SITE.postsPerPage, posts.length) - 1,
+  size: SITE.postsPerPage,
+  total: posts.length,
+  currentPage: 1,
+  lastPage,
+  url: { current: '/posts/', prev: undefined, next: lastPage > 1 ? '/posts/2.html' : undefined, first: undefined, last: undefined },
+};
+---
+
+<PostList page={page} />

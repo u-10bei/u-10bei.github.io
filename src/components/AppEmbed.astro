@@ -1,0 +1,19 @@
+---
+/**
+ * Embeds an app published separately (e.g. another repository's GitHub Pages)
+ * in an iframe, with a link to open it full screen.
+ */
+interface Props {
+  src: string;
+  title: string;
+  height?: number;
+}
+const { src, title, height = 720 } = Astro.props;
+---
+
+<figure class="chart">
+  <iframe class="chart-frame" src={src} title={title} loading="lazy" style={`height: ${height}px`}></iframe>
+  <figcaption class="chart-note">
+    <a href={src} target="_blank" rel="noopener">{title}を全画面で開く &rarr;</a>
+  </figcaption>
+</figure>

@@ -1,0 +1,17 @@
+{
+  "name": "u-10bei.github.io",
+  "image": "mcr.microsoft.com/devcontainers/python:3.12",
+  "features": {
+    "ghcr.io/devcontainers/features/node:1": { "version": "22" }
+  },
+  "postCreateCommand": "pip install uv && npm ci && npm run charts",
+  "forwardPorts": [4321],
+  "portsAttributes": {
+    "4321": { "label": "サイトのプレビュー", "onAutoForward": "openPreview" }
+  },
+  "customizations": {
+    "vscode": {
+      "extensions": ["astro-build.astro-vscode", "ms-python.python", "unifiedjs.vscode-mdx"]
+    }
+  }
+}

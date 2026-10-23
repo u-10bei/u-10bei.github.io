@@ -1,0 +1,16 @@
+---
+import { SITE } from '../site';
+import { formatDate, postUrl, readingTime, type Post } from '../lib/posts';
+
+interface Props { post: Post }
+const { post } = Astro.props;
+---
+
+<article class="post-preview">
+  <a href={postUrl(post)}>
+    <h2 class="post-title">{post.data.title}</h2>
+    {post.data.subtitle && <h3 class="post-subtitle">{post.data.subtitle}</h3>}
+  </a>
+  <p class="post-meta">Posted by {SITE.author} on {formatDate(post.data.date)} &middot; {readingTime(post.body)}</p>
+</article>
+<hr />

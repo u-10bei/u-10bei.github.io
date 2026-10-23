@@ -1,0 +1,23 @@
+---
+title: "covid-19_KTQchartについて"
+subtitle: "リポジトリ「covid-19_jpchart」の紹介３"
+date: 2022-02-20T00:00:00+09:00
+category: repository
+license: cc-by-3.0
+background: '/img/posts/04.jpg'
+---
+
+import Chart from '../../components/Chart.astro';
+
+## リポジトリ「covid-19_JPchart」の紹介３
+- 北九州市オープンデータを基に、北九州市の新規陽性者数を折れ線グラフにしています。
+- リポジトリでは javascript、Highcharts を使っていましたが、このページのグラフは Python（Plotly）で作り直しました。
+- データは２０２０年１月３０日から２０２２年９月２６日までです（データの更新は終了しています）。
+
+---
+
+<Chart name="covid19_ktq" />
+
+---
+- csvデータが手っ取り早く欲しいとか、データ取得元が知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPdata#readme)
+- プログラムの中身を知りたい方は[**こちら**](https://github.com/u-10bei/covid-19_JPchart)
