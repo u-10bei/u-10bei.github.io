@@ -17,7 +17,7 @@ export interface Repository {
 }
 
 export interface RepositoryGroup {
-  title: string;
+  title: Bilingual;
   /** Shown dimmed with an "アーカイブ" badge and this note */
   archived?: Bilingual;
   repositories: Repository[];
@@ -25,7 +25,7 @@ export interface RepositoryGroup {
 
 export const REPOSITORY_GROUPS: RepositoryGroup[] = [
   {
-    title: 'AI・LLM',
+    title: { en: 'AI & LLM', ja: 'AI・LLM' },
     repositories: [
       {
         name: 'jp-culture-benchmark',
@@ -37,7 +37,7 @@ export const REPOSITORY_GROUPS: RepositoryGroup[] = [
     ],
   },
   {
-    title: '日本酒・競馬・麻雀',
+    title: { en: 'Sake, Horse Racing & Mahjong', ja: '日本酒・競馬・麻雀' },
     repositories: [
       {
         name: 'Sake_Map',
@@ -66,7 +66,7 @@ export const REPOSITORY_GROUPS: RepositoryGroup[] = [
     ],
   },
   {
-    title: '北九州市のデータ',
+    title: { en: 'Kitakyushu City Data', ja: '北九州市のデータ' },
     repositories: [
       {
         name: 'infectious-disease-outbreaks_KTQ',
@@ -94,7 +94,7 @@ export const REPOSITORY_GROUPS: RepositoryGroup[] = [
     ],
   },
   {
-    title: '人口推計',
+    title: { en: 'Population Projections', ja: '人口推計' },
     repositories: [
       {
         name: 'Population_Projections_2020',
@@ -114,7 +114,7 @@ export const REPOSITORY_GROUPS: RepositoryGroup[] = [
     ],
   },
   {
-    title: '新型コロナウイルス',
+    title: { en: 'COVID-19', ja: '新型コロナウイルス' },
     archived: {
       en: 'Data updates ended in 2022. Kept as a record.',
       ja: 'データの更新は2022年に終了しました。記録として残しています。',

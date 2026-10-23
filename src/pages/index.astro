@@ -10,7 +10,7 @@ import { REPOSITORY_GROUPS } from '../data/repositories';
   <h2>Repositories</h2>
   {REPOSITORY_GROUPS.map((group) => (
     <section class:list={['repo-group', { archived: group.archived }]}>
-      <h3>{group.title}{group.archived && <span class="badge">アーカイブ</span>}</h3>
+      <h3>{group.title.en}<br />{group.title.ja}{group.archived && <span class="badge">アーカイブ</span>}</h3>
       {group.archived && <p class="repo-note">{group.archived.en}<br />{group.archived.ja}</p>}
       <ul class="repo-list">
         {group.repositories.map((repo) => (
