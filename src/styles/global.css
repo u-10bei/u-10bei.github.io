@@ -91,3 +91,13 @@ pre { overflow-x: auto; }
 }
 .social a:hover { background: var(--accent); color: #fff; }
 .copyright { color: var(--muted); font-size: 0.9rem; margin: 0; }
+
+/* ---- repository list (top page) ---- */
+.repo-group h3 { font-size: 1.05rem; margin: 1.75rem 0 0.5rem; color: var(--muted); }
+.repo-list { list-style: none; padding: 0; margin: 0; }
+.repo-list li { padding: 0.6rem 0; border-bottom: 1px solid var(--rule); }
+.repo-list li:last-child { border-bottom: 0; }
+.repo-name { font-weight: 700; overflow-wrap: anywhere; }
+.repo-description { margin: 0.15rem 0 0; font-size: 0.95rem; line-height: 1.6; }
+.repo-links { display: flex; gap: 1rem; margin: 0.25rem 0 0; font-size: 0.85rem; }
+.repo-links a::after { content: ' →'; }

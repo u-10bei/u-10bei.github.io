@@ -3,18 +3,34 @@ import BaseLayout from '../layouts/BaseLayout.astro';
 import PostPreview from '../components/PostPreview.astro';
 import { SITE } from '../site';
 import { getPosts } from '../lib/posts';
+import { REPOSITORY_GROUPS } from '../data/repositories';
 
 const posts = (await getPosts()).slice(0, 5);
-const repositories = ['covid-19_JPdata', 'covid-19_JPchart', 'Sake_Map', 'Population_Projections', 'Pedigree_JPG1horses'];
 ---
 
 <BaseLayout subheading={SITE.description} background="/img/bg-index.jpg">
   <p>I' m gonna enrich it little by little.<br />少しづつ充実させていきます。</p>
 
   <h2>Repositories</h2>
-  <ul>
-    {repositories.map((name) => <li><a href={`https://github.com/${SITE.github}/${name}`}>{name}</a></li>)}
-  </ul>
+  {REPOSITORY_GROUPS.map((group) => (
+    <section class="repo-group">
+      <h3>{group.title}</h3>
+      <ul class="repo-list">
+        {group.repositories.map((repo) => (
+          <li>
+            <a class="repo-name" href={`https://github.com/${SITE.github}/${repo.name}`}>{repo.name}</a>
+            <p class="repo-description">{repo.description}</p>
+            {(repo.app || repo.post) && (
+              <p class="repo-links">
+                {repo.app && <a href={repo.app}>アプリを開く</a>}
+                {repo.post && <a href={repo.post}>紹介記事</a>}
+              </p>
+            )}
+          </li>
+        ))}
+      </ul>
+    </section>
+  ))}
   <hr />
 
   {posts.map((post) => <PostPreview post={post} />)}
