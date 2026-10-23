@@ -16,3 +16,4 @@ background: '/img/bg-kita9.jpg'
 || Analyzing Time Series Data <br> （時系列データの分析） |
 | **master's thesis <br> （修士論文）**|[地方自治体の官民連携における有効性に関する一考察](https://drive.google.com/file/d/112SZ0BEoyGbJPYpPckiaYR8CsTOgWk5O/view?usp=sharing)|
 | **academic article <br> （論文）**|[「官民共創スコア」の開発に関する予備的調査](https://drive.google.com/file/d/1gSvZYAAI8q1iVfuamkhfUB3AO4Y-WbtX/view?usp=sharing)|
+| **Writing <br> （発信）** | [Qiita（@u-10bei）](https://qiita.com/u-10bei) |

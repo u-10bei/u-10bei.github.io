@@ -1,7 +1,7 @@
 export const SITE = {
   title: "u-10bei's labo",
   subtitle: 'うっかりじゅうべえの負けず嫌い実験室',
-  description: 'wants to be a data scientist with MBA holders.<br>ＭＢＡホルダーのデータサイエンティストになりたい',
+  description: 'An MBA holder who hates to lose: building, testing and sharing LLMs.<br>負けず嫌いのMBAホルダー。LLMをつくり、確かめ、共有する',
   author: 'u-10bei',
   email: 'u10bei.github.io@gmail.com',
   github: 'u-10bei',
