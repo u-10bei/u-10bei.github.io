@@ -9,6 +9,8 @@
 
 [u-10bei.github.io](https://u-10bei.github.io) is built with [Astro](https://astro.build); charts and maps are generated with Python (Plotly / folium) at build time.
 
+In GitHub Codespaces everything below is set up automatically (`.devcontainer/`); just run `npm run dev`.
+
 ```bash
 npm install          # Astro
 npm run charts       # Python: scripts/build_charts.py (uses uv)
