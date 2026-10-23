@@ -12,10 +12,41 @@ export interface Repository {
 
 export interface RepositoryGroup {
   title: string;
+  /** Shown dimmed with an "アーカイブ" badge and this note */
+  archived?: string;
   repositories: Repository[];
 }
 
 export const REPOSITORY_GROUPS: RepositoryGroup[] = [
+  {
+    title: 'AI・LLM',
+    repositories: [
+      {
+        name: 'jp-culture-benchmark',
+        description: 'LLM の日本文化理解力を4つの軸で評価するベンチマーク',
+      },
+    ],
+  },
+  {
+    title: '日本酒・競馬・麻雀',
+    repositories: [
+      {
+        name: 'Sake_Map',
+        description: '今までに飲んだ主な日本酒の地図',
+        post: '/2022/02/jp_SakeMap.html',
+      },
+      {
+        name: 'Pedigree_JPG1horses',
+        description: '日本の G1 勝ち馬の父系図',
+        app: '/Pedigree_JPG1horses/',
+        post: '/2022/09/jp_Pedigree_JPG1horses2.html',
+      },
+      {
+        name: 'mleague-stats',
+        description: 'Mリーグの対戦結果を可視化する Streamlit ダッシュボード',
+      },
+    ],
+  },
   {
     title: '北九州市のデータ',
     repositories: [
@@ -51,45 +82,17 @@ export const REPOSITORY_GROUPS: RepositoryGroup[] = [
   },
   {
     title: '新型コロナウイルス',
+    archived: 'データの更新は2022年に終了しました。記録として残しています。',
     repositories: [
       {
         name: 'covid-19_JPdata',
-        description: '厚生労働省・北九州市のオープンデータを分析しやすい形に加工（2022年11月で更新終了）',
+        description: '厚生労働省・北九州市のオープンデータを分析しやすい形に加工',
         post: '/2021/08/jp_covid19jpdata.html',
       },
       {
         name: 'covid-19_JPchart',
         description: '新規陽性者数などのグラフ',
         post: '/2021/09/jp_covid19jpchart.html',
-      },
-    ],
-  },
-  {
-    title: '日本酒・競馬・麻雀',
-    repositories: [
-      {
-        name: 'Sake_Map',
-        description: '今までに飲んだ主な日本酒の地図',
-        post: '/2022/02/jp_SakeMap.html',
-      },
-      {
-        name: 'Pedigree_JPG1horses',
-        description: '日本の G1 勝ち馬の父系図',
-        app: '/Pedigree_JPG1horses/',
-        post: '/2022/09/jp_Pedigree_JPG1horses2.html',
-      },
-      {
-        name: 'mleague-stats',
-        description: 'Mリーグの対戦結果を可視化する Streamlit ダッシュボード',
-      },
-    ],
-  },
-  {
-    title: 'AI・LLM',
-    repositories: [
-      {
-        name: 'jp-culture-benchmark',
-        description: 'LLM の日本文化理解力を4つの軸で評価するベンチマーク',
       },
     ],
   },
